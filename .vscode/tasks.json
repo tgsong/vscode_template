@@ -1,0 +1,52 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "tasks":[
+        {
+            "taskName": "Clang Release",
+            "command": "clang++",
+            "isShellCommand": true,
+            "args": [
+                "-std=c++1z", "-Weverything", "-Wno-sign-conversion", "-Wno-c++98-compat", "-O2",
+                "cpp_test.cpp"
+            ],
+            "showOutput": "always",
+            "echoCommand": true
+        },
+        {
+            "taskName": "Clang Debug",
+            "command": "clang++",
+            "isShellCommand": true,
+            "isBuildCommand": true,
+            "args": [
+                "-std=c++1z", "-Weverything", "-Wno-sign-conversion", "-Wno-c++98-compat", "-g",
+                "cpp_test.cpp"
+            ],
+            "showOutput": "always",
+            "echoCommand": true
+        },
+        {
+            "taskName": "GCC Release",
+            "command": "g++",
+            "isShellCommand": true,
+            "args": [
+                "-std=c++1z", "-Wall", "-Wextra", "-O2",
+                "cpp_test.cpp"
+            ],
+            "showOutput": "always",
+            "echoCommand": true
+        },
+        {
+            "taskName": "GCC Debug",
+            "command": "g++",
+            "isShellCommand": true,
+            "args": [
+                "-std=c++1z", "-Wall", "-Wextra", "-g",
+                "cpp_test.cpp"
+            ],
+            "showOutput": "always",
+            "echoCommand": true
+        }
+    ]
+}
