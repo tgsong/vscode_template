@@ -10,10 +10,16 @@ IndentWidth: 4
 AccessModifierOffset: -4
 NamespaceIndentation: None
 FixNamespaceComments: true
+SortIncludes: false
 BreakBeforeBraces: WebKit
+Cpp11BracedListStyle: true
+AllowShortBlocksOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: All
 AlwaysBreakTemplateDeclarations: true
 SpaceAfterTemplateKeyword: false
 
 PointerAlignment: Left
-AlignConsecutiveAssignments: true
+AlignTrailingComments: true
 ...
